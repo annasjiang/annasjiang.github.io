@@ -1,0 +1,366 @@
+/* FONT CATAGORIES*/
+h1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 5em;
+	margin: 10px;
+    color: white;
+}
+
+h2 {
+	font-family: 'Raleway ExtraLight', sans-serif;
+	font-size: 2em;
+	font-style: italic;
+    color: white;
+}
+
+h3 {
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+    font-weight: bold;
+	font-size: 2em;
+}
+
+h4 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.2em;
+}
+
+h5 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 4vw;
+	margin: 10px;
+}
+
+h6 {
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-size: 1.5em;
+	margin-bottom: 8px;
+}
+
+
+p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5em;
+	margin: 5px;
+    line-height: 1.3em;
+}
+
+/* Change the color of links on hover */
+a: {
+   color: #3d3d3d;
+}
+
+a:hover {
+    color: #928f8f;
+    text-decoration: none;
+}
+
+
+/* SMOOTH SCROLL TRANSITION */
+html {
+  scroll-behavior: smooth;
+}
+
+/* TOP NAV BAR */
+.topnav {
+	position: fixed;
+    background-color: white;
+    opacity: 0.7;
+	top: 0; /* Position the navbar at the top of the page */
+	width: 100%;
+	overflow: hidden;
+    z-index: 8000;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display: block;
+  color: #3d3d3d;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  margin-right: 5em;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2em;
+  transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 550px) {
+	.topnav a {   
+		font-size: 3vw;
+	}
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #928f8f;
+}
+
+#navbar-desktop {
+    display: block;
+}
+#navbar-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #navbar-desktop {
+        display: none;
+    }
+    #navbar-mobile {
+        display: block;
+    }
+}
+
+/* no margins */
+body {
+	margin: 0;
+}
+
+/* HEADER */
+.parallax {	
+	/* Text */
+	text-align: center;
+	padding: 320px 0;
+	color: #ffffff;	
+    margin-top: -65px;
+
+	/* Image */
+	background-image: url("images/trevi fountain.jpeg");
+
+	/* Set a specific height */
+	height: 100%;
+	
+	/* Parallax */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media screen and (max-width: 500px) {
+  .parallax {
+    padding: 150px 0;
+    background-attachment: scroll;
+  }
+  h1 {
+    font-size: 8vw;
+  }
+  .parallax h2 {
+    margin-top: -2vw;
+    font-size: 6vw;
+  }
+}
+
+/* ABOUT */
+
+.vl {
+  border-left: 2px solid #9fa4a5;
+  height: 130px;
+  position: absolute;
+  left: 50%;
+  margin-top: 2em;
+  margin-left: -1px;
+}
+
+.aboutheader {
+	color: #9fa4a5;
+    margin-top: 8em;
+    text-align: center;
+}
+
+.about {
+	text-align: center;
+	margin-right: 8em;
+	margin-left: 8em;
+}
+
+@media screen and (max-width: 700px) {
+  .about {
+    font-size: 3.5vw;
+    margin: 0 1em;
+  }
+}
+
+.about img {
+	text-align: center;
+	padding-bottom: 3em;
+	float: left;
+    width: 25vw;
+    min-width: 300px;	
+}
+
+@media screen and (max-width: 750px) { /* lil screen */
+  .about img {
+    width: 60vw;
+    float: none;
+    margin: 0 1em;
+  }
+}
+
+.about_chonk {
+	background-image: linear-gradient(170deg, white 60%, #e4c4b7 calc(60% + 2px)); 
+}
+
+/* PORTFOLIO */
+
+.vl2 {
+  border-left: 2px solid white;
+  height: 130px;
+  position: absolute;
+  left: 50%;
+  margin-top: 2em;
+  margin-left: -1px;
+}
+
+.portfolioheader {
+    padding-top: 8em;
+	margin-bottom: 3em;
+	color: white;
+	text-align: center;
+}
+
+.portfolio {
+	text-align: center;
+	padding: 0px 5%;
+	max-width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+p {
+    font-size: 3.5vw;
+    margin: 0 1em;
+  }
+}
+
+.portfolio img {
+	margin: 5em 20px 5em;
+	width: 18%;
+}
+
+@media screen and (max-width: 750px) {
+  .portfolio img {
+  	width: 50vw;
+  	margin: 1em 25px;
+  }
+}
+
+.portfolio img:hover {
+  transition: 0.5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.port_chonk {
+	background-image: linear-gradient(170deg, #e4c4b7 60%, white calc(60% + 2px)); 
+}
+
+/* ART PAGES */
+
+.artabout {
+	margin: 3em 18% 0;
+	text-align: center;
+	color: #3d3d3d;
+}
+
+.artabout a {
+    color: #3d3d3d;
+}
+
+.artabout a:hover {
+    color: #928f8f;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 500px) {
+	.artabout {
+		font-size: 3vw;
+	}
+}
+
+/* GALLERY SHIT */
+/*ur og gallery*/
+
+.gallery {
+	text-align: center;
+	padding: 0 10%;
+	margin-top: 5%;
+}
+
+.gallery a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 750px) {
+	.gallery {
+		padding: 0;
+	}
+}
+
+.gallery img:hover {
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0.7;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 10px;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 30%;
+  margin: 0.5em;
+}
+
+@media screen and (max-width: 750px) {
+  .column img {
+  	width: 70vw;
+  	margin: 1em 25px;
+  }
+}
+
+.gif-gallery {
+	text-align: center;
+	padding: 0 10%;
+	margin-top: 5%;
+}
+
+.single-col {
+    text-align: center;
+    margin: 0.5em;
+}
+
+.single-col img {
+    width: 560px;
+}
+
+/* FOOTER */
+footer {
+    padding: 10px 20px; 
+    text-align: center; 
+}
+
+footer h4 a {
+	color: #3d3d3d;
+	text-decoration: none;
+	text-align: center;
+	transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 700px) {
+  footer {
+  	font-size: 3vw; 
+  }
+}
