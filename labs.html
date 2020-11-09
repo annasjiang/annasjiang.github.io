@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html id="labs">
+
+<head>
+<!-- TAB SHIT -->
+<link rel="shortcut icon" href="images/aj.png?v=2">
+<title>Anna Jiang</title>
+    
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="uikit-3.5.7/css/uikit.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit-icons.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<meta name="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- <meta name="keywords" content="keyword1,keyword2,keyword3">
+<meta name="description" content="this is my page"> -->
+
+<!-- FONTS -->
+<link href="https://fonts.googleapis.com/css?family=Raleway"
+	rel="stylesheet">
+</head>
+
+<body id="traditional">
+	<header>
+        <div id="navbar-desktop">
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+		<nav class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li>
+                    <a href="index.html#portfolio">PORTFOLIO</a>
+                    <div class="uk-navbar-dropdown" uk-drop="animation: uk-animation-slide-top-small; duration: 500;">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="traditional.html">TRADITIONAL</a></li>
+                            <li><a href="digital.html">DIGITAL</a></li>
+                            <li><a href="design.html">DESIGN</a></li>
+                            <li><a href="animation.html">ANIMATION</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="labs.html">PROJECTS</a>
+                    <div class="uk-navbar-dropdown" uk-drop="animation: uk-animation-slide-top-small; duration: 500;">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li class="uk-active"><a href="labs.html">PENN LABS</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </nav>
+        </div>
+        </div>
+        
+        <div id="navbar-mobile">
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <nav class="uk-navbar-container" uk-navbar="mode: click; boundary-align: true; align: center; dropbar: true">
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="index.html#about">ABOUT</a></li>
+                                <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+                                <li class="uk-nav-divider"></li>
+                                    <div class = "sublink">
+                                    <li><a href="traditional.html">TRADITIONAL</a></li>
+                                    <li><a href="digital.html">DIGITAL</a></li>
+                                    <li><a href="design.html">DESIGN</a></li>
+                                    <li><a href="animation.html">ANIMATION</a></li>
+                                    </div>
+                                <li><a href="index.html#portfolio">PROJECTS</a></li>
+                                <li class="uk-nav-divider"></li>
+                                    <div class = "sublink">
+                                    <li class="uk-active"><a href="traditional.html">PENN LABS</a></li>
+                                    </div>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+        </div>
+	</header>
+	<div class="main">
+		<div class="artabout">
+			<h5>PENN LABS</h5>
+			<p>I recently joined <a href="https://pennlabs.org/about" target="_blank">Penn Labs</a> as a UI/UX Designer. I currently work on a small team that develops Penn Mobile, an app made by Penn students, for Penn students. These are some of my recent projects that I've made using Figma!</p>
+		</div>
+        
+        <div class="container">
+            <div class="card">
+                <h1>Technical Challenge</h1>
+                <video width="500" height=auto controls>
+                    <source src="images/labs/technical.mov">
+                </video> <br><br>
+                <p>
+                In order to be accepted into Penn Labs, every applicant must complete a technical challenge. This challenge focused on <a href="https://penncoursereview.com/" target="_blank">Penn Course Review</a>, a product that helps students search for and evaluate Penn Courses. My task was to "consider and design one new feature that you would like to add that would assist students in their course selection process." 
+                    <br><br>
+                I decided to implement a few features in my design, starting with a small area dedicated to suggested courses based on common combinations, as many students paired up certain classes.
+                    <br><br>
+                My main feature was the FAQ section, which was meant to add a more qualitative aspect to the course reviews, as they were mainly just number scores at the time. Questions were to be posted anonymously to most people so students wouldn't be detered from asking questions. However, professors and TAs would be able to see who posted on their course FAQ and remove anything inapproriate. Similarily, regular users could report inapproriate questions and comments. The FAQ was located in the general course page to discourage students from  commenting on specific professors or make comparisions, as the professors also viewed this site.
+                    <br><br>
+                Finally in addition to the FAQ, I added a card for contact information for the professor and TAs in order to ask more private questions.
+            </p>
+            </div>
+        </div>
+	</div>
+
+
+	<footer>
+		<h4>
+			<a href="mailto: annashijiang@gmail.com" target="_blank">EMAIL</a>
+			&nbsp; &#8226; &nbsp; 
+			<a href="https://www.linkedin.com/in/annasjiang/" target="_blank">LINKEDIN</a>
+			&nbsp; &#8226; &nbsp; 
+			<a href="Anna Jiang - Resume.pdf" target="_blank">RESUME</a>
+			&nbsp; &#8226; &nbsp; 
+			<a href="https://github.com/annasjiang">CODE</a>
+		</h4>
+	</footer>
+	<script src="scriptittyscript.js"></script>
+</body>
+</html>
