@@ -1,366 +1,176 @@
-/* FONT CATAGORIES*/
-h1 {
-	font-family: 'Raleway', sans-serif;
-	font-size: 5em;
-	margin: 10px;
-    color: white;
-}
+<!DOCTYPE html>
+<html index>
 
-h2 {
-	font-family: 'Raleway ExtraLight', sans-serif;
-	font-size: 2em;
-	font-style: italic;
-    color: white;
-}
+<head>
+<!-- TAB SHIT -->
+<link rel="shortcut icon" href="images/aj.png?v=2">
+<title>Anna Jiang</title>
+    
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="uikit-3.5.7/css/uikit.css"/>
 
-h3 {
-	font-family: 'Playfair Display', serif;
-	font-style: italic;
-    font-weight: bold;
-	font-size: 2em;
-}
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit-icons.min.js"></script>
+  
+<link rel="stylesheet" type="text/css" href="style.css"/>
 
-h4 {
-	font-family: 'Raleway', sans-serif;
-	font-size: 1.2em;
-}
+<meta name="content-type" content="text/html; charset=UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-h5 {
-	font-family: 'Raleway', sans-serif;
-	font-size: 4vw;
-	margin: 10px;
-}
-
-h6 {
-	font-family: 'Playfair Display', serif;
-	font-style: italic;
-	font-size: 1.5em;
-	margin-bottom: 8px;
-}
+<!-- <meta name="keywords" content="keyword1,keyword2,keyword3">
+<meta name="description" content="this is my page">-->
 
 
-p {
-	font-family: 'Raleway', sans-serif;
-	font-size: 1.5em;
-	margin: 5px;
-    line-height: 1.3em;
-}
-
-/* Change the color of links on hover */
-a: {
-   color: #3d3d3d;
-}
-
-a:hover {
-    color: #928f8f;
-    text-decoration: none;
-}
-
-
-/* SMOOTH SCROLL TRANSITION */
-html {
-  scroll-behavior: smooth;
-}
-
-/* TOP NAV BAR */
-.topnav {
-	position: fixed;
-    background-color: white;
-    opacity: 0.7;
-	top: 0; /* Position the navbar at the top of the page */
-	width: 100%;
-	overflow: hidden;
-    z-index: 8000;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: right;
-  display: block;
-  color: #3d3d3d;
-  text-align: center;
-  padding: 20px 0px 20px 0px;
-  margin-right: 5em;
-  text-decoration: none;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.2em;
-  transition-duration: 0.5s;
-}
-
-@media screen and (max-width: 550px) {
-	.topnav a {   
-		font-size: 3vw;
+<!-- FONTS -->
+<link href="https://fonts.googleapis.com/css?family=Raleway"
+	rel="stylesheet">
+<style>
+	body {
+		font-family: 'Raleway', sans-serif;
 	}
-}
+</style>
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  color: #928f8f;
-}
+</head>
 
-#navbar-desktop {
-    display: block;
-}
-#navbar-mobile {
-    display: none;
-}
+<body id="home">
+    <!-- IMAGE HEADER -->
+	<header>
+        <div id="navbar-desktop">
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+		<nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="index.html">HOME</a></li>
+                    <li><a href="index.html#about">ABOUT</a></li>
+                <li>
+                    <a href="index.html#portfolio">PORTFOLIO</a>
+                    <div class="uk-navbar-dropdown" uk-drop="animation: uk-animation-slide-top-small; duration: 500;">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="traditional.html">TRADITIONAL</a></li>
+                            <li><a href="digital.html">DIGITAL</a></li>
+                            <li><a href="design.html">DESIGN</a></li>
+                            <li><a href="animation.html">ANIMATION</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="labs.html">PROJECTS</a>
+                    <div class="uk-navbar-dropdown" uk-drop="animation: uk-animation-slide-top-small; duration: 500;">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="labs.html">PENN LABS</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </nav>
+        </div>
+        </div>
+        
+        <div id="navbar-mobile">
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <nav class="uk-navbar-container" uk-navbar="mode: click; boundary-align: true; align: center; dropbar: true">
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="index.html">HOME</a></li>
+                                <li><a href="index.html#about">ABOUT</a></li>
+                                <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+                                <li class="uk-nav-divider"></li>
+                                    <div class = "sublink">
+                                    <li><a href="traditional.html">TRADITIONAL</a></li>
+                                    <li><a href="digital.html">DIGITAL</a></li>
+                                    <li><a href="design.html">DESIGN</a></li>
+                                    <li><a href="animation.html">ANIMATION</a></li>
+                                    </div>
+                                <li><a href="index.html#portfolio">PROJECTS</a></li>
+                                <li class="uk-nav-divider"></li>
+                                    <div class = "sublink">
+                                    <li><a href="traditional.html">PENN LABS</a></li>
+                                    </div>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+        </div>
+	</header>
+    
+<div class ="main">
+    <span id="home"></span>
 
-@media screen and (max-width: 768px) {
-    #navbar-desktop {
-        display: none;
-    }
-    #navbar-mobile {
-        display: block;
-    }
-}
-
-/* no margins */
-body {
-	margin: 0;
-}
-
-/* HEADER */
-.parallax {	
-	/* Text */
-	text-align: center;
-	padding: 320px 0;
-	color: #ffffff;	
-    margin-top: -65px;
-
-	/* Image */
-	background-image: url("images/trevi fountain.jpeg");
-
-	/* Set a specific height */
-	height: 100%;
+	<div class="parallax">
+	    <br>
+		<h1>ANNA JIANG</h1>
+		<h2>CS &amp; DESIGN</h2>
+	</div>
 	
-	/* Parallax */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+	<!-- ABOUT ME -->
+	<span id="about"></span>
+	<div class="vl"></div>
+	<div class="about_chonk">
+	<div class="aboutheader">
+	<br>
+	<br>
+	<h3 style="color: #9fa4a5">about me</h3>
+	</div>
 
-@media screen and (max-width: 500px) {
-  .parallax {
-    padding: 150px 0;
-    background-attachment: scroll;
-  }
-  h1 {
-    font-size: 8vw;
-  }
-  .parallax h2 {
-    margin-top: -2vw;
-    font-size: 6vw;
-  }
-}
+	<div class="about">	
+		<img src="images/wonderspace.png">
+		<p>
+	    Hi, I'm Anna! I'm currently a student at the University of
+		Pennsylvania studying Digital Media Design. <br> <br> I've
+		been an artist my whole life, but I just started learning computer science this past year! I'm really excited to learn more about CS, and I've coded this website so I could familiarize myself with more languages over summer break! I'm interested in combining my design and computer science talents and creating projects that have an impact on others &mdash; whether it be big or small. <br> <br> Outside of class, I enjoy learning new things whenever I can, such as cooking and embroidery, and I also enjoy running and swimming recreationally!
+		</p>
+		<br>
+		<br>
+	</div>
+	</div>
+	</div>
+	
+	<!-- PORTFOLIO -->
+	<span id="portfolio"></span>
+	<div class="vl2"></div>
+	<div class="port_chonk">
+	<div class="portfolioheader">
+	<br>
+	<br>
+	<h3 style="color: #FFF"> portfolio </h3> 
+	</div>
+	
+	<div class="portfolio">
+	<p> Over the years, I've experimented with plenty of different mediums and softwares. <br>
+	    View some of my art by clicking below! </p>
+	<a href="traditional.html">
+	  <span class="trad_art_tab"><img src="images/traditional art tab.png" style="max-width: 100%"></span></a>
+	<a href="digital.html">
+	  <span class="dig_art_tab"><img src="images/digital art tab.png" style="max-width: 100%"></span></a>
+	<a href="design.html">
+			<span class="design_tab"><img src="images/design tab.png" style="max-width: 100%"></span></a>
+    <a href="animation.html">
+			<span class="design_tab"><img src="images/animation tab.gif" style="max-width: 100%"></span></a>
+	</div>
+	</div>
+    
 
-/* ABOUT */
-
-.vl {
-  border-left: 2px solid #9fa4a5;
-  height: 130px;
-  position: absolute;
-  left: 50%;
-  margin-top: 2em;
-  margin-left: -1px;
-}
-
-.aboutheader {
-	color: #9fa4a5;
-    margin-top: 8em;
-    text-align: center;
-}
-
-.about {
-	text-align: center;
-	margin-right: 8em;
-	margin-left: 8em;
-}
-
-@media screen and (max-width: 700px) {
-  .about {
-    font-size: 3.5vw;
-    margin: 0 1em;
-  }
-}
-
-.about img {
-	text-align: center;
-	padding-bottom: 3em;
-	float: left;
-    width: 25vw;
-    min-width: 300px;	
-}
-
-@media screen and (max-width: 750px) { /* lil screen */
-  .about img {
-    width: 60vw;
-    float: none;
-    margin: 0 1em;
-  }
-}
-
-.about_chonk {
-	background-image: linear-gradient(170deg, white 60%, #e4c4b7 calc(60% + 2px)); 
-}
-
-/* PORTFOLIO */
-
-.vl2 {
-  border-left: 2px solid white;
-  height: 130px;
-  position: absolute;
-  left: 50%;
-  margin-top: 2em;
-  margin-left: -1px;
-}
-
-.portfolioheader {
-    padding-top: 8em;
-	margin-bottom: 3em;
-	color: white;
-	text-align: center;
-}
-
-.portfolio {
-	text-align: center;
-	padding: 0px 5%;
-	max-width: 100%;
-}
-
-@media screen and (max-width: 750px) {
-p {
-    font-size: 3.5vw;
-    margin: 0 1em;
-  }
-}
-
-.portfolio img {
-	margin: 5em 20px 5em;
-	width: 18%;
-}
-
-@media screen and (max-width: 750px) {
-  .portfolio img {
-  	width: 50vw;
-  	margin: 1em 25px;
-  }
-}
-
-.portfolio img:hover {
-  transition: 0.5s;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.port_chonk {
-	background-image: linear-gradient(170deg, #e4c4b7 60%, white calc(60% + 2px)); 
-}
-
-/* ART PAGES */
-
-.artabout {
-	margin: 3em 18% 0;
-	text-align: center;
-	color: #3d3d3d;
-}
-
-.artabout a {
-    color: #3d3d3d;
-}
-
-.artabout a:hover {
-    color: #928f8f;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-@media screen and (max-width: 500px) {
-	.artabout {
-		font-size: 3vw;
-	}
-}
-
-/* GALLERY SHIT */
-/*ur og gallery*/
-
-.gallery {
-	text-align: center;
-	padding: 0 10%;
-	margin-top: 5%;
-}
-
-.gallery a {
-    text-decoration: none;
-}
-
-@media screen and (max-width: 750px) {
-	.gallery {
-		padding: 0;
-	}
-}
-
-.gallery img:hover {
-    position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    opacity: 0.7;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 10px;
-}
-
-/* Create two equal columns that sits next to each other */
-.column {
-  flex: 50%;
-  padding: 0 10px;
-}
-
-.column img {
-  vertical-align: middle;
-  width: 30%;
-  margin: 0.5em;
-}
-
-@media screen and (max-width: 750px) {
-  .column img {
-  	width: 70vw;
-  	margin: 1em 25px;
-  }
-}
-
-.gif-gallery {
-	text-align: center;
-	padding: 0 10%;
-	margin-top: 5%;
-}
-
-.single-col {
-    text-align: center;
-    margin: 0.5em;
-}
-
-.single-col img {
-    width: 560px;
-}
-
-/* FOOTER */
-footer {
-    padding: 10px 20px; 
-    text-align: center; 
-}
-
-footer h4 a {
-	color: #3d3d3d;
-	text-decoration: none;
-	text-align: center;
-	transition-duration: 0.5s;
-}
-
-@media screen and (max-width: 700px) {
-  footer {
-  	font-size: 3vw; 
-  }
-}
+	
+	
+	<footer>
+        <h4>
+			<a href="mailto: annashijiang@gmail.com" target="_blank">EMAIL</a>
+			&nbsp; &#8226; &nbsp; 
+			<a href="https://www.linkedin.com/in/annasjiang/" target="_blank">LINKEDIN</a>
+			&nbsp; &#8226; &nbsp; 
+			<a href="Anna Jiang - Resume.pdf" target="_blank">RESUME</a>
+			&nbsp; &#8226; &nbsp; 
+			<a href="https://github.com/annasjiang">CODE</a>
+        </h4>
+	</footer>
+</body>
+</html>
