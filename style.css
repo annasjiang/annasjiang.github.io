@@ -5,54 +5,54 @@ html {
 
 /* no margins */
 body {
-	margin: 0;
+    margin: 0;
 }
 
 /* FONT CATEGORIES*/
 h1 {
-	font-family: 'Raleway', sans-serif;
-	font-size: 5em;
-	margin: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 5em;
+    margin: 10px;
     color: white;
 }
 
 h2 {
-	font-family: 'Raleway ExtraLight', sans-serif;
-	font-size: 2em;
-	font-style: italic;
+    font-family: 'Raleway ExtraLight', sans-serif;
+    font-size: 2em;
+    font-style: italic;
     color: white;
 }
 
 h3 {
-	font-family: 'Playfair Display', serif;
-	font-style: italic;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
     font-weight: bold;
-	font-size: 2em;
+    font-size: 2em;
 }
 
 h4 {
-	font-family: 'Raleway', sans-serif;
-	font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
 }
 
 h5 {
-	font-family: 'Raleway', sans-serif;
-	font-size: 4vw;
-	margin: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 4vw;
+    margin: 10px;
 }
 
 h6 {
-	font-family: 'Playfair Display', serif;
-	font-style: italic;
-	font-size: 1.5em;
-	margin-bottom: 8px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.5em;
+    margin-bottom: 8px;
 }
 
 
 p {
-	font-family: 'Raleway', sans-serif;
-	font-size: 1.3em;
-	margin: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em;
+    margin: 5px;
     line-height: 1.5em;
 }
 
@@ -97,24 +97,24 @@ a:hover {
 }
 
 /* HEADER */
-.parallax {	
-	/* Text */
-	text-align: center;
-	padding: 320px 0;
-	color: #ffffff;	
+.parallax { 
+    /* Text */
+    text-align: center;
+    padding: 320px 0;
+    color: #ffffff; 
     margin-top: -65px;
 
-	/* Image */
-	background-image: url("images/trevi fountain.jpeg");
+    /* Image */
+    background-image: url("images/trevi fountain.jpeg");
 
-	/* Set a specific height */
-	height: 100%;
-	
-	/* Parallax */
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+    /* Set a specific height */
+    height: 100%;
+    
+    /* Parallax */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .parallax h2 {
@@ -147,16 +147,16 @@ a:hover {
 }
 
 .aboutheader {
-	color: #9fa4a5;
+    color: #9fa4a5;
     margin-top: 8em;
     margin-bottom: 3em;
     text-align: center;
 }
 
 .about {
-	text-align: center;
-	margin-right: 10em;
-	margin-left: 10em;
+    text-align: center;
+    margin-right: 10em;
+    margin-left: 10em;
 }
 
 @media screen and (max-width: 700px) {
@@ -167,11 +167,11 @@ a:hover {
 }
 
 .about img {
-	text-align: center;
-	padding-bottom: 3em;
-	float: left;
+    text-align: center;
+    padding-bottom: 3em;
+    float: left;
     width: 27vw;
-    min-width: 250px;	
+    min-width: 250px;   
 }
 
 @media screen and (max-width: 750px) { /* lil screen */
@@ -195,16 +195,16 @@ a:hover {
 
 .portfolioheader {
     padding-top: 8em;
-	margin-bottom: 3em;
-	color: white;
-	text-align: center;
+    margin-bottom: 3em;
+    color: white;
+    text-align: center;
 }
 
 .portfolio {
-	text-align: center;
+    text-align: center;
     margin: 0 9em;
-	padding: 0px 5%;
-	max-width: 100%;
+    padding: 0px 5%;
+    max-width: 100%;
 }
 
 @media screen and (max-width: 750px) {
@@ -249,20 +249,20 @@ a:hover {
 /* background gradient*/ 
 
 .about_chonk {
-	background-image: linear-gradient(170deg, white 60%, #e4c4b7 calc(60% + 2px)) 
+    background-image: linear-gradient(170deg, white 60%, #e4c4b7 calc(60% + 2px)) 
 }
 
 .port_chonk {
     /*background-color: #e4c4b7;*/
-	background-image: linear-gradient(170deg, #e4c4b7 60%, white calc(60% + 2px));
+    background-image: linear-gradient(170deg, #e4c4b7 60%, white calc(60% + 2px));
 }
 
 /* ART PAGES */
 
 .artabout {
-	margin: 3em 18% 0;
-	text-align: center;
-	color: #3d3d3d;
+    margin: 3em 18% 0;
+    text-align: center;
+    color: #3d3d3d;
 }
 
 .artabout a {
@@ -276,9 +276,9 @@ a:hover {
 }
 
 @media screen and (max-width: 500px) {
-	.artabout {
-		font-size: 3vw;
-	}
+    .artabout {
+        font-size: 3vw;
+    }
 }
 
 /* GALLERY SHIT */
@@ -286,9 +286,9 @@ a:hover {
 /* SQUARE GALLERY */
 
 .gallery {
-	text-align: center;
-	padding: 0 10%;
-	margin-top: 5%;
+    text-align: center;
+    padding: 0 10%;
+    margin-top: 5%;
 }
 
 .gallery a {
@@ -296,9 +296,9 @@ a:hover {
 }
 
 @media screen and (max-width: 750px) {
-	.gallery {
-		padding: 0;
-	}
+    .gallery {
+        padding: 0;
+    }
 }
 
 .gallery img:hover {
@@ -327,17 +327,17 @@ a:hover {
 
 @media screen and (max-width: 750px) {
   .column img {
-  	width: 70vw;
-  	margin: 1em 25px;
+    width: 70vw;
+    margin: 1em 25px;
   }
 }
 
 /* SINGLE COL GALLERY */
 
 .gif-gallery {
-	text-align: center;
-	padding: 0 10%;
-	margin-top: 5%;
+    text-align: center;
+    padding: 0 10%;
+    margin-top: 5%;
 }
 
 .single-col {
@@ -379,7 +379,7 @@ a:hover {
 
 .card h1 {
     font-family: 'Raleway', sans-serif;
-	font-size: 1.3em;
+    font-size: 1.3em;
     font-weight: bold;
     color: #3d3d3d;
     line-height: 1.5em;
@@ -407,14 +407,14 @@ footer {
 }
 
 footer h4 a {
-	color: #3d3d3d;
-	text-decoration: none;
-	text-align: center;
-	transition-duration: 0.5s;
+    color: #3d3d3d;
+    text-decoration: none;
+    text-align: center;
+    transition-duration: 0.5s;
 }
 
 @media screen and (max-width: 700px) {
   footer {
-  	font-size: 3vw; 
+    font-size: 3vw; 
   }
 }
