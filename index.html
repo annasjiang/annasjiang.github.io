@@ -18,23 +18,14 @@
 <meta name="content-type" content="text/html; charset=UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- <meta name="keywords" content="keyword1,keyword2,keyword3">
-<meta name="description" content="this is my page">-->
-
-
 <!-- FONTS -->
-<link href="https://fonts.googleapis.com/css?family=Raleway"
-    rel="stylesheet">
-<style>
-    body {
-        font-family: 'Raleway', sans-serif;
-    }
-</style>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Mukta&display=swap" rel="stylesheet">
 
 </head>
 
 <body id="home">
-    <header>
+	<header>
     
     <!-- DESKTOP NAV -->
     <div id="navbar-desktop">
@@ -42,8 +33,9 @@
         <nav class="uk-navbar-container" uk-navbar>
         <div class="uk-navbar-right">
         <ul class="uk-navbar-nav">
-            <li class="uk-active"><a href="index.html">HOME</a></li>
+            <li class="uk-active"><a href="index.html#home">HOME</a></li>
             <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="index.html#demo-reel">DEMO REEL</a></li>
             <li>
                 <a href="index.html#portfolio">PORTFOLIO</a>
                 <div class="uk-navbar-dropdown" uk-drop="animation: uk-animation-slide-top-small; duration: 500;">
@@ -76,6 +68,7 @@
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <li class="uk-active"><a href="index.html">HOME</a></li>
                             <li><a href="index.html#about">ABOUT</a></li>
+                            <li><a href="index.html#demo-reel">DEMO REEL</a></li>
                             <li><a href="index.html#portfolio">PORTFOLIO</a></li>
                             <li class="uk-nav-divider"></li>
                                 <div class = "sublink">
@@ -95,119 +88,157 @@
         </nav>
         </div>
         </div>
-    </header>
+	</header>
     
 <div class ="main">
+    <!-- LANDING PARALLAX -->
     <span id="home"></span>
+    <div class="uk-animation-fade uk-animation-slow">
+    	<div class="parallax">
+            <div class="uk-animation-slide-top-medium" style="animation-delay: 1000ms;">
+        	    <br>
+        		<h1>ANNA JIANG</h1>
+            </div>
+            <div class="uk-animation-slide-top-medium" style="animation-delay: 1200ms;">
+        		<h2>CS &amp; DESIGN</h2>
+            </div>
+    	</div>
+    </div>
+	
+	<!-- ABOUT ME -->
+	<span id="about"></span>
+    <div uk-scrollspy="target: > div; cls: uk-animation-fade">
+	   <div class="vl"></div>
+    </div>
+	<div class="about_chonk">
+        <div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 100">
+    	   <div class="aboutheader"><br><br><h3 style="color: #9fa4a5">about me</h3></div>
+    	</div>
 
-    <div class="parallax">
-        <br>
-        <h1>ANNA JIANG</h1>
-        <h2>CS &amp; DESIGN</h2>
+        <div uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-medium; delay: 300">
+        	<div class="about">	
+        		<img src="images/wonderspace.png">
+        		<p><br>
+        	    Hi, I'm Anna! I'm currently a student at the University of
+        		Pennsylvania studying computer graphics through the 
+                Digital Media Design program. <br> <br> 
+                Though I'm relatively new to coding, I've been an artist 
+                my whole life! I'm interested in combining my design 
+                and computer science talents and creating projects 
+                that have an impact on others &mdash; whether it be big or small. 
+                <br> <br> Outside of class, I enjoy learning new things whenever 
+                I can, such as cooking and embroidery, and I also enjoy running 
+                and swimming recreationally!
+        		</p>
+        		<br>
+        		<br>
+        	</div>
+        </div>
     </div>
     
-    <!-- ABOUT ME -->
-    <span id="about"></span>
-    <div class="vl"></div>
-    <div class="about_chonk">
-    <div class="aboutheader">
-    <br>
-    <br>
-    <h3 style="color: #9fa4a5">about me</h3>
+    <!-- DEMO REEL -->
+	<span id="demo-reel"></span>
+    <div uk-scrollspy="target: > div; cls: uk-animation-fade">
+	   <div class="vl2"></div>
+    </div>
+	<div class="demo_chonk">
+        <div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 100">
+    	   <div class="portfolioheader"><br><br><h3 style="color: #FFF">demo reel</h3></div>
+    	</div>
+
+        <div uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-medium; delay: 300">
+        	<div class="about">	
+        		<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/612421735?h=245224e4b7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Demo Reel"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                <br>
+        		<br>
+        	</div>
+        </div>
     </div>
 
-    <div class="about"> 
-        <img src="images/wonderspace.png">
-        <p>
-        Hi, I'm Anna! I'm currently a student at the University of
-        Pennsylvania studying Digital Media Design. <br> <br> I've
-        been an artist my whole life, but I just started learning computer science this past year! I'm really excited to learn more about CS, and I've coded this website so I could familiarize myself with more languages over summer break! I'm interested in combining my design and computer science talents and creating projects that have an impact on others &mdash; whether it be big or small. <br> <br> Outside of class, I enjoy learning new things whenever I can, such as cooking and embroidery, and I also enjoy running and swimming recreationally!
-        </p>
-        <br>
-        <br>
+	
+	<!-- PORTFOLIO -->
+	<span id="portfolio"></span>
+    <div uk-scrollspy="target: > div; cls: uk-animation-fade">
+	   <div class="vl2"></div>
     </div>
-    </div>
-    </div>
-    
-    <!-- PORTFOLIO -->
-    <span id="portfolio"></span>
-    <div class="vl2"></div>
-    <div class="port_chonk">
-    <div class="portfolioheader">
-    <br>
-    <br>
-    <h3 style="color: #FFF"> portfolio </h3> 
-    </div>
-    
-    <div class="portfolio">
-    <p> Over the years, I've experimented with plenty of different mediums and softwares. <br>
-        View some of my art below! </p> <br><br>
+	<div class="port_chonk">
+        <div uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 100">
+            <div class="portfolioheader"><br><br><h3 style="color: #FFF"> portfolio </h3></div>
+        </div>
+
+        <div uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-medium; delay: 300">	
+            <div class="portfolio">
+                <p> Over the years, I've experimented with plenty of different mediums and softwares. <br>
+            	View some of my art below! </p> <br><br>
         
-    <div id="port-desktop">
-    <div uk-slider="sets: true, center: true">
-    <div class="uk-position-relative">
-        <div class="uk-slider-container uk-light">
-            <ul class="uk-slider-items uk-child-width-1-3 uk-child-width-1-3@s uk-child-width-1-3@m uk-grid">
-                <li><a href="traditional.html"><img src="images/traditional%20art%20tab.png" alt="" style="width: 17em"></a></li>
-                <li><a href="digital.html"><img src="images/digital%20art%20tab.png" alt="" style="width: 17em"></a></li>
-                <li><a href="design.html"><img src="images/design%20tab.png" alt="" style="width: 17em"></a></li>
-                <li><a href="modeling.html"><img src="images/model%20tab.png" alt="" style="width: 17em"></a></li>
-                <li><a href="animation.html"><img src="images/animation%20tab.gif" alt="" style="width: 17em"></a></li>
-                <li><a href="labs.html"><img src="images/labs%20tab.png" alt="" style="width: 17em"></a></li>
-                <li><a href="fun.html"><img src="images/fun%20tab.png" alt="" style="width: 17em"></a></li>
-            </ul>
+                <div id="port-desktop">
+                <div uk-slider="sets: true, center: true">
+                <div class="uk-position-relative">
+                    <div class="uk-slider-container uk-light">
+                        <ul class="uk-slider-items uk-child-width-1-3 uk-child-width-1-3@s uk-child-width-1-3@m uk-grid">
+                            <li><a href="traditional.html"><img src="images/traditional%20art%20tab.png" alt="" style="width: 17em"></a></li>
+                            <li><a href="digital.html"><img src="images/digital%20art%20tab.png" alt="" style="width: 17em"></a></li>
+                            <li><a href="design.html"><img src="images/design%20tab.png" alt="" style="width: 17em"></a></li>
+                            <li><a href="modeling.html"><img src="images/model%20tab.png" alt="" style="width: 17em"></a></li>
+                            <li><a href="animation.html"><img src="images/animation%20tab.gif" alt="" style="width: 17em"></a></li>
+                            <li><a href="labs.html"><img src="images/labs%20tab.png" alt="" style="width: 17em"></a></li>
+                            <li><a href="fun.html"><img src="images/fun%20tab.png" alt="" style="width: 17em"></a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-hidden@s uk-light">
+                        <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    </div>
+                    <div class="uk-visible@s">
+                        <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    </div>
+                </div>
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
+                </div>
+                    
+                <div id="port-mobile">
+                <div uk-slider="center: true">
+                <div class="uk-position-relative">
+                    <div class="uk-slider-container uk-light">
+                        <ul class="uk-slider-items uk-grid">
+                            <li><a href="traditional.html"><img src="images/traditional%20art%20tab.png" alt="" style="width: 17em"></a></li>
+                            <li><a href="digital.html"><img src="images/digital%20art%20tab.png" alt="" style="width: 17em"></a></li>
+                            <li><a href="design.html"><img src="images/design%20tab.png" alt="" style="width: 17em"></a></li>
+                            <li><a href="modeling.html"><img src="images/model%20tab.png" alt="" style="width: 17em"></a></li>
+                            <li><a href="animation.html"><img src="images/animation%20tab.gif" alt="" style="width: 17em"></a></li>
+                            <li><a href="labs.html"><img src="images/labs%20tab.png" alt="" style="width: 17em"></a></li>
+                            <li><a href="fun.html"><img src="images/fun%20tab.png" alt="" style="width: 17em"></a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-hidden@s">
+                        <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    </div>
+                    <div class="uk-visible@s">
+                        <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    </div>
+                </div>
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                </div>
+                </div>
+            </div>
         </div>
-        <div class="uk-hidden@s uk-light">
-            <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
-        </div>
-        <div class="uk-visible@s">
-            <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-            <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
-        </div>
-    </div>
-    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-    </div>
-    </div>
-        
-    <div id="port-mobile">
-    <div uk-slider="center: true">
-    <div class="uk-position-relative">
-        <div class="uk-slider-container uk-light">
-            <ul class="uk-slider-items uk-grid">
-                <li><a href="traditional.html"><img src="images/traditional%20art%20tab.png" alt="" style="width: 17em"></a></li>
-                <li><a href="digital.html"><img src="images/digital%20art%20tab.png" alt="" style="width: 17em"></a></li>
-                <li><a href="design.html"><img src="images/design%20tab.png" alt="" style="width: 17em"></a></li>
-                <li><a href="modeling.html"><img src="images/model%20tab.png" alt="" style="width: 17em"></a></li>
-                <li><a href="animation.html"><img src="images/animation%20tab.gif" alt="" style="width: 17em"></a></li>
-                <li><a href="labs.html"><img src="images/labs%20tab.png" alt="" style="width: 17em"></a></li>
-                <li><a href="fun.html"><img src="images/fun%20tab.png" alt="" style="width: 17em"></a></li>
-            </ul>
-        </div>
-        <div class="uk-hidden@s">
-            <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
-        </div>
-        <div class="uk-visible@s">
-            <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-            <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
-        </div>
-    </div>
-    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-    </div>
-    </div>
-        
+    </div>       
 </div>
-</div>
-    
-    <footer>
+	
+	<footer>
         <h4>
-            <a href="mailto: annashijiang@gmail.com" target="_blank">EMAIL</a>
-            &nbsp; &#8226; &nbsp; 
-            <a href="https://www.linkedin.com/in/annasjiang/" target="_blank">LINKEDIN</a>
-            &nbsp; &#8226; &nbsp; 
-            <a href="https://github.com/annasjiang">CODE</a>
+			<a href="mailto: annashijiang@gmail.com" target="_blank">EMAIL</a>
+			&nbsp; &#8226; &nbsp; 
+			<a href="https://www.linkedin.com/in/annasjiang/" target="_blank">LINKEDIN</a>
+			&nbsp; &#8226; &nbsp; 
+			<!--<a href="Anna Jiang - Resume.pdf" target="_blank">RESUME</a>
+			&nbsp; &#8226; &nbsp;-->
+			<a href="https://github.com/annasjiang">CODE</a>
         </h4>
-    </footer>
+	</footer>
 </body>
 </html>
