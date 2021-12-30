@@ -404,6 +404,28 @@ a:hover {
     transition: opacity 0.5s ease-in-out;
 }
 
+/* dsgn projects */
+.dsgn {
+    margin: 3em 18% 0;
+}
+
+.dsgn h5 {
+    font-size: 2vw;
+}
+
+.dsgn p {
+    font-size: 1.2em;
+}
+
+.dsgn-row {
+  display: flex;
+}
+
+.dsgn-column {
+  flex: 33.33%;
+  padding: 10px;
+}
+
 /* FOOTER */
 footer {
     padding: 10px 20px; 
